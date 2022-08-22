@@ -1,5 +1,4 @@
 import React from 'react';
-import { GiHamburgerMenu as MenuIcon } from 'react-icons/Gi';
 
 const Nav = () => {
   return (
