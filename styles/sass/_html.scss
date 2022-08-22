@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @include xl {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include lg {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+body {
+  // background-color: #321cab;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+h1 {
+  // color: red;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}

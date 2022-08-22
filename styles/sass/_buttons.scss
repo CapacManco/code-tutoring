@@ -1,0 +1,65 @@
+.button--small {
+  border: none;
+
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.9rem 1.6rem;
+  font-size: 1.9rem;
+  background-color: #f44354;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  &:hover {
+    background-color: #d82537;
+  }
+}
+
+.button--cta {
+  align-self: start;
+
+  border: none;
+
+  color: #ffffff;
+  font-weight: 700;
+  padding: 2rem 2.5rem;
+  font-size: 2rem;
+  background-color: #f44354;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  &:hover {
+    background-color: #d82537;
+  }
+}
+
+.button--card {
+  border: none;
+
+  color: #ffffff;
+  font-weight: 500;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  // border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  &--1 {
+    background-color: #00538e;
+    &:hover {
+      background-color: #004576;
+    }
+  }
+
+  &--2 {
+    background-color: #f44354;
+    &:hover {
+      background-color: #d82537;
+    }
+  }
+
+  &--3 {
+    background-color: #62bf6f;
+    &:hover {
+      background-color: rgb(77, 169, 91);
+    }
+  }
+}
