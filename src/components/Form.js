@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from 'firebase/firestore';
-import db from '../../pages/utils/firebaseConfig';
+import db from '../../utils/firebaseConfig';
 
 const Form = () => {
   const [formValid, setFormValid] = useState(false);
