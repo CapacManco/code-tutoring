@@ -31,7 +31,7 @@ const Nav = () => {
         </div>
         <div className="nav__contact">
           <button className="button--small">
-            <a href="#booking">Réserver →</a>
+            <a href="#booking">Book a lesson →</a>
           </button>
         </div>
       </nav>

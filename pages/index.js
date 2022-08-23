@@ -28,7 +28,7 @@ const App = () => {
   return (
     <>
       <Head>
-        <title>Codingtutor.io | Coding tutors giving you lessons !</title>
+        <title>Coding Tutors Online | Codingtutors.io </title>
         <meta
           name="description"
           content="Experienced coding tutors giving you programming lessons. HTML, CSS, Javascript !"
@@ -39,14 +39,14 @@ const App = () => {
           <Nav />
           <div className="home__left">
             <p className="heading__big">
-              → Des <span className="heading__big__underline">tuteurs</span> en
-              programmation adaptés à vos besoins
+              → Coding <span className="heading__big__underline">tutors</span>{' '}
+              adapted to your needs !
             </p>
             <p className="heading__medium">
               Exclusive offer : the first session is FREE !
             </p>
             <button className="button--cta">
-              <a href="#booking">Prendre un cours →</a>
+              <a href="#booking">Take a lesson →</a>
             </button>
           </div>
         </header>
@@ -69,7 +69,7 @@ const App = () => {
                 teaching experience.
               </p>
               <button className="advantage__button button--cta">
-                <a href="#booking">Prendre un cours</a>
+                <a href="#booking">Take a lesson</a>
               </button>
             </div>
           </div>
@@ -111,7 +111,7 @@ const App = () => {
                 you more flexibility and personalization.
               </p>
               <button className="advantage__button button--cta">
-                <a href="#booking">Prendre un cours</a>
+                <a href="#booking">Take a lesson</a>
               </button>
             </div>
           </div>
@@ -171,7 +171,7 @@ const App = () => {
               order to identify your needs and establish goals.{' '}
             </p>
             <p className="promotion__button button--cta">
-              <a href="#booking">Prendre un cours</a>
+              <a href="#booking">Take a lesson</a>
             </p>
           </div>
           <div className="promotion__img__container">
