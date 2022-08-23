@@ -13,7 +13,7 @@ const Nav = () => {
               <Image src={logo} layout="responsive" width="150" height="150" />
             </div>
             <li className="nav__link">
-              <a href="#advantages">Why codingtutor.io ?</a>
+              <a href="#advantages">Why codingtutors.io ?</a>
             </li>
             <li className="nav__link">
               <a href="#courses">Courses</a>

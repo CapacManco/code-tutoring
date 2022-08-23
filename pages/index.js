@@ -367,10 +367,10 @@ const App = () => {
         </div>
         <footer className="footer">
           <div className="footer__box">
-            <p className="footer__title">Codingtutor.io</p>
+            <p className="footer__title">Codingtutors.io</p>
             <ul className="footer__nav">
               <li className="footer__link">
-                <a href="#advantages">Why codingtutor.io ?</a>
+                <a href="#advantages">Why codingtutors.io ?</a>
               </li>
               <li className="footer__link">
                 <a href="#courses">Courses</a>
@@ -386,8 +386,8 @@ const App = () => {
               </li>
             </ul>
             <p className="footer__email">
-              <a href="mailto: contact@codingtutor.io">
-                contact@codingtutor.io
+              <a href="mailto: contact@codingtutors.io">
+                contact@codingtutors.io
               </a>
             </p>
             <div className="footer__socials">
