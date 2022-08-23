@@ -561,7 +561,7 @@ a {
 
 .nav {
   display: flex;
-  margin: 0rem 14rem;
+  margin: 0rem 14rem 0rem 8rem;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
@@ -578,8 +578,9 @@ a {
     align-items: center;
     font-weight: 300;
     grid-gap: 2vw; }
-  .nav__logo {
-    height: 10rem;
+  .nav__logo__container {
+    height: 5rem;
+    width: 5rem;
     margin-right: 5rem; }
   .nav__link {
     font-size: 1.9rem;

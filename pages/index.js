@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../src/components/Nav';
 import Form from '../src/components/Form';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import advantage1 from '../public/img/4565.jpg';
 import advantage2 from '../public/img/5278.jpg';
@@ -26,6 +27,13 @@ import {
 const App = () => {
   return (
     <>
+      <Head>
+        <title>Codingtutor.io | Coding tutors giving you lessons !</title>
+        <meta
+          name="description"
+          content="Experienced coding tutors giving you programming lessons. HTML, CSS, Javascript !"
+        />
+      </Head>
       <div className="layout">
         <header className="home">
           <Nav />

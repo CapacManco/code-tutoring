@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  margin: 0rem 14rem;
+  margin: 0rem 14rem 0rem 8rem;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
@@ -22,8 +22,9 @@
     grid-gap: 2vw;
   }
 
-  &__logo {
-    height: 10rem;
+  &__logo__container {
+    height: 5rem;
+    width: 5rem;
     margin-right: 5rem;
   }
 

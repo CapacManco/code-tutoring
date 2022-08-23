@@ -1,4 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
+
+import logo from '../../public/img/logo.png';
 
 const Nav = () => {
   return (
@@ -6,7 +9,9 @@ const Nav = () => {
       <nav className="nav">
         <div className="nav__section-1">
           <ul className="nav__menu">
-            {/* <img className="nav__logo" src="./img/logo-1.png" /> */}
+            <div className="nav__logo__container">
+              <Image src={logo} layout="responsive" width="150" height="150" />
+            </div>
             <li className="nav__link">
               <a href="#advantages">Why codingtutor.io ?</a>
             </li>
