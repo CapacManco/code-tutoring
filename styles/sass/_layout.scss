@@ -1,7 +1,8 @@
 .layout {
   display: grid;
-
-  grid-template-columns: 100vw;
+  width: 100vw;
+  max-width: 100%;
+  grid-template-columns: 100%;
 }
 
 .home {
@@ -317,11 +318,6 @@
     align-items: center;
     grid-gap: 0.5rem;
 
-    @include xxl {
-      width: 35rem;
-      padding: 1.5rem;
-    }
-
     &--first {
       background-color: #0065ae;
       display: flex;
@@ -384,8 +380,19 @@
     }
   }
 
+  @include big {
+    &__card {
+      width: 50rem;
+      &--first {
+        height: 30rem;
+      }
+    }
+  }
+
   @include xxl {
     &__card {
+      width: 35rem;
+      padding: 1.5rem;
       &--first {
         height: 40rem;
       }

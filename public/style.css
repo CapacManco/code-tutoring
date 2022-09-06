@@ -36,7 +36,9 @@ a {
 
 .layout {
   display: grid;
-  grid-template-columns: 100vw; }
+  width: 100vw;
+  max-width: 100%;
+  grid-template-columns: 100%; }
 
 .home {
   z-index: 10;
@@ -256,10 +258,6 @@ a {
     flex-direction: column;
     align-items: center;
     grid-gap: 0.5rem; }
-    @media (max-width: 1500px) {
-      .testimony__card {
-        width: 35rem;
-        padding: 1.5rem; } }
     .testimony__card--first {
       background-color: #0065ae;
       display: flex;
@@ -300,9 +298,17 @@ a {
       .testimony__author__text__occupation {
         color: #dedede;
         font-size: 1.3rem; }
+  @media (max-width: 1800px) {
+    .testimony__card {
+      width: 50rem; }
+      .testimony__card--first {
+        height: 30rem; } }
   @media (max-width: 1500px) {
-    .testimony__card--first {
-      height: 40rem; } }
+    .testimony__card {
+      width: 35rem;
+      padding: 1.5rem; }
+      .testimony__card--first {
+        height: 40rem; } }
   @media (max-width: 850px) {
     .testimony__slider {
       flex-direction: column;
