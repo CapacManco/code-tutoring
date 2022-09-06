@@ -1,7 +1,7 @@
 .layout {
   display: grid;
-  width: 100vw;
-  max-width: 100%;
+
+  grid-template-columns: 100vw;
 }
 
 .home {
@@ -27,12 +27,6 @@
     background-color: #000000;
     opacity: 0.1;
   }
-  @include xxl {
-    grid-template-columns: 3fr 2fr;
-  }
-  @include lg {
-    grid-template-columns: 2fr 1fr;
-  }
 
   &__left {
     grid-column: 1 / 2;
@@ -44,6 +38,20 @@
     margin-left: 10rem;
     margin-top: -6rem;
     justify-content: center;
+  }
+  @include xxl {
+    grid-template-columns: 3fr 2fr;
+  }
+  @include lg {
+    grid-template-columns: 2fr 1fr;
+  }
+  @include sm {
+    grid-template-columns: 4fr 1fr;
+    padding: 0;
+
+    &__left {
+      margin-left: 7rem;
+    }
   }
 }
 

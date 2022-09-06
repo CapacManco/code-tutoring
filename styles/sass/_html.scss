@@ -3,11 +3,15 @@ html {
   scroll-behavior: smooth;
 
   @include xl {
-    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
   }
 
   @include lg {
     font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include sm {
+    font-size: 55%;
   }
 }
 
@@ -15,8 +19,9 @@ html {
   font-family: 'Lato', sans-serif;
 }
 body {
-  // background-color: #321cab;
   font-size: 1.6rem;
+  // background-color: #321cab;
+
   color: #ffffff;
 }
 
