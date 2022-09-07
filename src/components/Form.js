@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { collection, addDoc, getDocs } from 'firebase/firestore';
+import {
+  collection,
+  addDoc,
+  getDocs,
+  serverTimestamp,
+} from 'firebase/firestore';
 import db from '../../utils/firebaseConfig';
+
+// Firebase rule if write only is not sufficient, necessity to implement another solution
+// write: if request.time > resource.data.timestamp + duration.value(5, "s");
 
 const Form = () => {
   const [formValid, setFormValid] = useState(false);
@@ -28,8 +36,9 @@ const Form = () => {
         phone: formState.tel,
         formula: formState.formula,
         description: formState.description,
-        date: new Date().toLocaleString(),
+        timestamp: serverTimestamp(),
         contacted: 'no',
+        lastUpdate: serverTimestamp(),
       });
       setFormSubmitted(true);
     } catch (e) {
