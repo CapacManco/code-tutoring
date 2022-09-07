@@ -191,9 +191,9 @@ const App = () => {
                 <QuoteImg className="testimony__quote" />
                 <p className="testimony__box">
                   <em>
-                    This was my first experience with tutorprogramming.io and
-                    the tutor was very professional and adjusted the lesson to
-                    my level so I don't feel lost.
+                    This was my first experience with codingtutors.io and the
+                    tutor was very professional and adjusted the lesson to my
+                    level so I don't feel lost.
                   </em>
                 </p>
               </div>
