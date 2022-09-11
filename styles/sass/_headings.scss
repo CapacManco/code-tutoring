@@ -1,6 +1,12 @@
 .heading__big {
   font-size: 7rem;
   line-height: 100%;
+  @include sm {
+    font-size: 6rem;
+  }
+  @include ssm {
+    font-size: 5rem;
+  }
 }
 
 .heading__big__underline {

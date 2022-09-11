@@ -1,11 +1,12 @@
 .layout {
   display: grid;
-  width: 100vw;
-  max-width: 100%;
-  grid-template-columns: 100%;
+  // width: 100vw;
+  // max-width: 100%;
+  grid-template-columns: 100vw;
 }
 
 .home {
+  grid-column: 1 / 2;
   z-index: 10;
   padding: 2rem;
   display: grid;
@@ -44,7 +45,7 @@
     grid-template-columns: 3fr 2fr;
   }
   @include lg {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
   }
   @include sm {
     grid-template-columns: 4fr 1fr;
@@ -57,6 +58,7 @@
 }
 
 .advantages {
+  grid-column: 1 / 2;
   padding: 10rem 4rem;
   display: grid;
   grid-template-rows: 35vh 35vh 35vh;
@@ -145,6 +147,7 @@
   }
 
   @include sm {
+    padding: 0;
     &__box {
       width: 35rem;
     }
@@ -153,9 +156,16 @@
       width: 40rem;
     }
   }
+
+  @include ssm {
+    &__image__container {
+      width: 35rem;
+    }
+  }
 }
 
 .courses {
+  grid-column: 1 / 2;
   padding: 8rem 4rem;
   background-color: #e74157;
   display: flex;
@@ -206,9 +216,16 @@
   @include mdg {
     flex-direction: column;
   }
+
+  @include ssm {
+    &__card {
+      width: 90vw;
+    }
+  }
 }
 
 .promotion {
+  grid-column: 1 / 2;
   padding: 4rem 10rem;
   display: flex;
   background-color: #ffe0db;
@@ -281,16 +298,17 @@
   @include sm {
     grid-gap: 3rem;
     &__box {
-      width: 40rem;
+      width: 70vw;
     }
 
     &__img__container {
-      width: 53rem;
+      width: 100vw;
     }
   }
 }
 
 .testimony {
+  grid-column: 1 / 2;
   background-color: #00538e;
   padding: 10rem 4rem;
 
@@ -304,10 +322,10 @@
   }
 
   &__slider {
-    width: 100%;
+    // width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 0;
   }
 
   &__card {
@@ -421,7 +439,7 @@
 
   @include sm {
     &__card {
-      width: 50rem;
+      width: 100vw;
 
       &--first {
         padding: 2rem 2rem 5rem 2rem;
@@ -431,6 +449,7 @@
 }
 
 .about-us {
+  grid-column: 1 / 2;
   padding: 8rem 4rem;
   background-color: #fdd2bf;
   display: grid;
@@ -514,6 +533,7 @@
 }
 
 .prices {
+  grid-column: 1 / 2;
   background-color: #ffe0db;
   padding: 10rem 4rem;
 
@@ -621,9 +641,16 @@
       width: 45rem;
     }
   }
+
+  @include ssm {
+    &__card {
+      width: 90vw;
+    }
+  }
 }
 
 .booking {
+  grid-column: 1 / 2;
   padding: 6rem 4rem;
   background-color: #e7374f;
   display: flex;
@@ -737,10 +764,14 @@
     &__input {
       width: 30rem;
     }
+    &__form {
+      width: 90vw;
+    }
   }
 }
 
 .footer {
+  grid-column: 1 / 2;
   padding: 8rem 0;
   background-color: rgb(33, 33, 33);
 
@@ -805,5 +836,11 @@
     &__link {
       margin-right: 1rem;
     }
+  }
+}
+
+.hidden {
+  @include ssm {
+    display: none;
   }
 }

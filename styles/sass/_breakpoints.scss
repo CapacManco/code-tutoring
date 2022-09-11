@@ -1,4 +1,7 @@
 // smarthphones
+
+$screen-sssm-max: 350px;
+
 $screen-ssm-max: 450px;
 
 // Small tablets and large smartphones (landscape view)
@@ -20,6 +23,12 @@ $screen-xl-max: 1200px;
 $screen-xxl-max: 1500px;
 
 $screen-big-max: 1800px;
+
+@mixin sssm {
+  @media (max-width: #{$screen-sssm-max}) {
+    @content;
+  }
+}
 
 @mixin ssm {
   @media (max-width: #{$screen-ssm-max}) {

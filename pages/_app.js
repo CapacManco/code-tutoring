@@ -4,10 +4,7 @@ import '../public/style.css';
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1"
-      ></meta>
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
 
       <Component {...pageProps} />
     </>

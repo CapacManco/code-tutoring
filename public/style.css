@@ -17,9 +17,6 @@ html {
   @media (max-width: 950px) {
     html {
       font-size: 50%; } }
-  @media (max-width: 576px) {
-    html {
-      font-size: 55%; } }
 
 * {
   font-family: 'Lato', sans-serif; }
@@ -36,11 +33,10 @@ a {
 
 .layout {
   display: grid;
-  width: 100vw;
-  max-width: 100%;
-  grid-template-columns: 100%; }
+  grid-template-columns: 100vw; }
 
 .home {
+  grid-column: 1 / 2;
   z-index: 10;
   padding: 2rem;
   display: grid;
@@ -74,7 +70,7 @@ a {
       grid-template-columns: 3fr 2fr; } }
   @media (max-width: 950px) {
     .home {
-      grid-template-columns: 2fr 1fr; } }
+      grid-template-columns: 3fr 1fr; } }
   @media (max-width: 576px) {
     .home {
       grid-template-columns: 4fr 1fr;
@@ -83,6 +79,7 @@ a {
         margin-left: 7rem; } }
 
 .advantages {
+  grid-column: 1 / 2;
   padding: 10rem 4rem;
   display: grid;
   grid-template-rows: 35vh 35vh 35vh;
@@ -138,12 +135,18 @@ a {
     .advantage__image__container {
       width: 50rem; } }
   @media (max-width: 576px) {
-    .advantage__box {
-      width: 35rem; }
+    .advantage {
+      padding: 0; }
+      .advantage__box {
+        width: 35rem; }
+      .advantage__image__container {
+        width: 40rem; } }
+  @media (max-width: 450px) {
     .advantage__image__container {
-      width: 40rem; } }
+      width: 35rem; } }
 
 .courses {
+  grid-column: 1 / 2;
   padding: 8rem 4rem;
   background-color: #e74157;
   display: flex;
@@ -180,8 +183,12 @@ a {
   @media (max-width: 850px) {
     .courses {
       flex-direction: column; } }
+  @media (max-width: 450px) {
+    .courses__card {
+      width: 90vw; } }
 
 .promotion {
+  grid-column: 1 / 2;
   padding: 4rem 10rem;
   display: flex;
   background-color: #ffe0db;
@@ -233,11 +240,12 @@ a {
     .promotion {
       grid-gap: 3rem; }
       .promotion__box {
-        width: 40rem; }
+        width: 70vw; }
       .promotion__img__container {
-        width: 53rem; } }
+        width: 100vw; } }
 
 .testimony {
+  grid-column: 1 / 2;
   background-color: #00538e;
   padding: 10rem 4rem;
   display: grid;
@@ -247,10 +255,9 @@ a {
     .testimony {
       padding: 5rem 4rem; } }
   .testimony__slider {
-    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 2rem; }
+    padding: 2rem 0; }
   .testimony__card {
     width: 60rem;
     display: flex;
@@ -322,11 +329,12 @@ a {
       padding: 1rem 1rem 4rem 1rem; } }
   @media (max-width: 576px) {
     .testimony__card {
-      width: 50rem; }
+      width: 100vw; }
       .testimony__card--first {
         padding: 2rem 2rem 5rem 2rem; } }
 
 .about-us {
+  grid-column: 1 / 2;
   padding: 8rem 4rem;
   background-color: #fdd2bf;
   display: grid;
@@ -382,6 +390,7 @@ a {
     width: 12rem; }
 
 .prices {
+  grid-column: 1 / 2;
   background-color: #ffe0db;
   padding: 10rem 4rem;
   display: flex;
@@ -451,8 +460,12 @@ a {
       flex-direction: column; }
       .prices__card {
         width: 45rem; } }
+  @media (max-width: 450px) {
+    .prices__card {
+      width: 90vw; } }
 
 .booking {
+  grid-column: 1 / 2;
   padding: 6rem 4rem;
   background-color: #e7374f;
   display: flex;
@@ -527,9 +540,12 @@ a {
       width: 45rem; } }
   @media (max-width: 576px) {
     .booking__input {
-      width: 30rem; } }
+      width: 30rem; }
+    .booking__form {
+      width: 90vw; } }
 
 .footer {
+  grid-column: 1 / 2;
   padding: 8rem 0;
   background-color: #212121;
   display: flex;
@@ -572,6 +588,10 @@ a {
       align-items: center; }
     .footer__link {
       margin-right: 1rem; } }
+
+@media (max-width: 450px) {
+  .hidden {
+    display: none; } }
 
 .nav {
   display: flex;
@@ -678,7 +698,7 @@ a {
     align-items: center;
     justify-content: center; }
     .menu-wrap .menu > div {
-      background-color: rgba(0, 0, 0, 0.621);
+      background-color: rgba(0, 0, 0, 0.721);
       border-radius: 50%;
       width: 220vw;
       height: 220vh;
@@ -696,7 +716,7 @@ a {
         transition: opacity 0.4s ease; }
         .menu-wrap .menu > div > div > ul > li {
           list-style: none;
-          font-size: 2rem;
+          font-size: 2.4rem;
           padding: 1rem; }
           .menu-wrap .menu > div > div > ul > li > a {
             transition: color 0.4s ease; }
@@ -754,6 +774,12 @@ a {
 .heading__big {
   font-size: 7rem;
   line-height: 100%; }
+  @media (max-width: 576px) {
+    .heading__big {
+      font-size: 6rem; } }
+  @media (max-width: 450px) {
+    .heading__big {
+      font-size: 5rem; } }
 
 .heading__big__underline {
   position: relative; }

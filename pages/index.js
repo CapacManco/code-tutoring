@@ -39,8 +39,9 @@ const App = () => {
           <Nav />
           <div className="home__left">
             <p className="heading__big">
-              → Coding <span className="heading__big__underline">tutors</span>{' '}
-              adapted to your needs !
+              <span className="hidden">→</span> Coding{' '}
+              <span className="heading__big__underline">tutors</span> adapted to
+              your needs !
             </p>
             <p className="heading__medium">
               Exclusive offer : the first session is FREE !
