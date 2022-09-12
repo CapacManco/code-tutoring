@@ -5,9 +5,11 @@ import {
   getDocs,
   serverTimestamp,
 } from 'firebase/firestore';
+
+import emailjs from '@emailjs/browser';
 import db from '../../utils/firebaseConfig';
 
-// Firebase rule if write only is not sufficient, necessity to implement another solution
+// Firebase rule : if write only is not sufficient, necessity to implement another solution
 // write: if request.time > resource.data.timestamp + duration.value(5, "s");
 
 const Form = () => {
@@ -38,9 +40,9 @@ const Form = () => {
         description: formState.description,
         timestamp: serverTimestamp(),
         contacted: 'no',
-        lastUpdate: serverTimestamp(),
       });
       setFormSubmitted(true);
+      sendMail();
     } catch (e) {
       console.error('Error adding document: ', e);
     }
@@ -59,43 +61,33 @@ const Form = () => {
     setFormValid(false);
   };
 
+  const sendMail = () => {
+    const values = {
+      name: formState.name,
+      email: formState.email,
+      phone: formState.tel,
+      formula: formState.formula,
+      description: formState.description,
+      timestamp: new Date().toLocaleString(),
+    };
+
+    emailjs
+      .send('service_lmil0ml', 'template_dj3jnhx', values, 'dsb6Smxkg3Y93h0KB')
+      .then(
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
+  };
+
   const handleValidation = () => {
-    //HERE6
     //Name
     if (!formState.name) {
       setFormErrors('Name cannot be empty');
     }
-
-    // if (typeof fields['name'] !== 'undefined') {
-    //   if (!fields['name'].match(/^[a-zA-Z]+$/)) {
-    //     formIsValid = false;
-    //     errors['name'] = 'Only letters';
-    //   }
-    // }
-
-    //Email
-    //   if (!fields['email']) {
-    //     formIsValid = false;
-    //     errors['email'] = 'Cannot be empty';
-    //   }
-
-    //   if (typeof fields['email'] !== 'undefined') {
-    //     let lastAtPos = fields['email'].lastIndexOf('@');
-    //     let lastDotPos = fields['email'].lastIndexOf('.');
-
-    //     if (
-    //       !(
-    //         lastAtPos < lastDotPos &&
-    //         lastAtPos > 0 &&
-    //         fields['email'].indexOf('@@') == -1 &&
-    //         lastDotPos > 2 &&
-    //         fields['email'].length - lastDotPos > 2
-    //       )
-    //     ) {
-    //       formIsValid = false;
-    //       errors['email'] = 'Email is not valid';
-    //     }
-    //   }
   };
 
   return (
