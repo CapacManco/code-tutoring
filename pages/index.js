@@ -46,9 +46,9 @@ const App = () => {
             <p className="heading__medium">
               Exclusive offer : the first session is FREE !
             </p>
-            <button className="button--cta">
-              <a href="#booking">Take a lesson →</a>
-            </button>
+            <a href="#booking">
+              <button className="button--cta">Take a lesson →</button>
+            </a>
           </div>
         </header>
         <div className="advantages" id="advantages">
@@ -69,9 +69,11 @@ const App = () => {
                 We select carefully our tutors to ensure that you have the best
                 teaching experience.
               </p>
-              <button className="advantage__button button--cta">
-                <a href="#booking">Take a lesson</a>
-              </button>
+              <a href="#booking">
+                <button className="advantage__button button--cta">
+                  Take a lesson
+                </button>
+              </a>
             </div>
           </div>
           <div className="advantage">
@@ -111,9 +113,11 @@ const App = () => {
                 Our tutoring sessions are all online and one-on-one. It gives
                 you more flexibility and personalization.
               </p>
-              <button className="advantage__button button--cta">
-                <a href="#booking">Take a lesson</a>
-              </button>
+              <a href="#booking">
+                <button className="advantage__button button--cta">
+                  Take a lesson
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -171,9 +175,11 @@ const App = () => {
               For your convenience, we offer the first 30 minutes session in
               order to identify your needs and establish goals.{' '}
             </p>
-            <p className="promotion__button button--cta">
-              <a href="#booking">Take a lesson</a>
-            </p>
+            <a href="#booking">
+              <button className="promotion__button button--cta">
+                Take a lesson
+              </button>
+            </a>
           </div>
           <div className="promotion__img__container">
             <Image
@@ -296,9 +302,11 @@ const App = () => {
               <p className="prices__card__feature">Support</p>
             </div>
             <div className="prices__card__box--bottom">
-              <button className="button--card button--card--1">
-                <a href="#booking">BOOK A SESSION</a>
-              </button>
+              <a href="#booking">
+                <button className="button--card button--card--1">
+                  BOOK A SESSION
+                </button>
+              </a>
               <p className="prices__card__promotion prices__card__promotion--1">
                 The first lesson is free !
               </p>
@@ -324,9 +332,11 @@ const App = () => {
               <p className="prices__card__feature">Personal tutor</p>
             </div>
             <div className="prices__card__box--bottom">
-              <button className="button--card button--card--2">
-                <a href="#booking">BOOK A SESSION</a>
-              </button>
+              <a href="#booking">
+                <button className="button--card button--card--2">
+                  BOOK A SESSION
+                </button>
+              </a>
               <p className="prices__card__promotion prices__card__promotion--2">
                 The first lesson is free !
               </p>
@@ -352,9 +362,11 @@ const App = () => {
               <p className="prices__card__feature">Personal tutor</p>
             </div>
             <div className="prices__card__box--bottom">
-              <button className="button--card button--card--3">
-                <a href="#booking">BOOK A SESSION</a>
-              </button>
+              <a href="#booking">
+                <button className="button--card button--card--3">
+                  BOOK A SESSION
+                </button>
+              </a>
               <p className="prices__card__promotion prices__card__promotion--3">
                 The first lesson is free !
               </p>
