@@ -97,9 +97,9 @@ const Form = () => {
   return (
     <form className="booking__form">
       <div className="booking__textbox">
-        <p className="booking__title">BOOK A SESSION</p>
+        <p className="booking__title">BOOK A CALL</p>
         <p className="booking__text">
-          Book a lesson with one of our experienced tutors !
+          Book a first call with one of our experienced tutors !
         </p>
       </div>
       <div className="booking__inputs">
