@@ -215,7 +215,7 @@ const App = () => {
                   />
                 </div>
                 <div className="testimony__author__text">
-                  <p className="testimony__author__text__name">Semih Bekki</p>
+                  <p className="testimony__author__text__name">Tom Ecken</p>
                   <p className="testimony__author__text__occupation">
                     Web Developer
                   </p>
